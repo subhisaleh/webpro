@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sum of Digits</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+	<h2>Enter a positive integer to find the sum of its digits:</h2>
+	<form method='get' action='cgi-bin/sum_of_digits.py'>
+		<input type='text' name='number' value=''>
+		<input type='submit' value='Submit'>
+	</form>
+	{% if number %}
+		<p>{{ sum_of_digits }}</p>
+	{% endif %}
+</body>
+</html>
